@@ -8,10 +8,20 @@
 }
 
 .fighters-grid div {
+  position: relative;
   transition: transform 0.3s;
 }
 
 .fighters-grid div:hover {
   transform: scale(1.07);
-
 }
+
+.fighter-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.fighter-img {}
