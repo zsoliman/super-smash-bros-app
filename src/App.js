@@ -3,7 +3,21 @@ import Fighter from './components/Fighter';
 
 function App() {
 
-  const fighters = ['Roy', 'Ganondorf', 'Mario', 'Luigi', 'Marth', 'Link', 'Inkling', 'Samus', 'Fox', 'Sheik', 'Zelda', 'Ken']
+  const fighters = [
+    { name: 'Roy', color: 'blue' },
+    { name: 'Ganondorf', color: 'brown' },
+    { name: 'Mario', color: 'lightskyblue' },
+    { name: 'Lucina', color: 'pink' },
+    { name: 'Marth', color: 'dodgerblue' },
+    { name: 'Link', color: 'grey' },
+    { name: 'Inkling', color: 'orange' },
+    { name: 'Samus', color: 'gold' },
+    { name: 'Fox', color: 'mediumseagreen' },
+    { name: 'Sheik', color: 'coral' },
+    { name: 'Zelda', color: 'midnightblue' },
+    { name: 'Ken', color: 'firebrick' }
+
+  ]
 
   return (
 
