@@ -1,5 +1,7 @@
 import './App.css';
+import { useState } from 'react';
 import Fighter from './components/Fighter';
+import FighterScreen from './components/FighterScreen';
 
 function App() {
 
@@ -19,6 +21,11 @@ function App() {
 
   ]
 
+  const [selectedFighter, setSelectedFighter] = useState()
+  const handleClick = (element) => {
+    setSelectedFighter(element.name)
+  }
+
   return (
 
     <div className="App">
@@ -28,13 +35,18 @@ function App() {
         {
           fighters.map((element, index) => {
             return (
-              <Fighter fighter={element} />
+              <Fighter fighter={element} setSelectedFighter={setSelectedFighter} />
             )
           })
         }
 
       </div>
+      {
+        // Conditional render based on a ternary statement
+        selectedFighter ? <FighterScreen /> : null
+      }
     </div>
+
 
   );
 }
